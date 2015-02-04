@@ -1,0 +1,36 @@
+body {margin:0;}
+
+#frameborder {
+    position:fixed;
+    top:12px;
+    left:12px;
+    right:12px;
+    bottom:12px;
+    border:10px;
+    border-color:#333;
+    border-style:solid;
+    z-index:100;
+}
+
+.slideshow {
+
+}
+
+
+.bgimg {
+    position: absolute;
+    z-index:2;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-animation:imgslide 16s ease infinite;
+    animation:disolve 10s ease infinite;}
+
+@keyframes imgslide {
+
+
+
+}
