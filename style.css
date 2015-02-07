@@ -2,7 +2,7 @@
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong,sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header,hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font: inherit;vertical-align: baseline}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section{display: block}
 html,body{-webkit-text-size-adjust:none}
-body{ font:300 12px "",Helvetica,Arial;line-height:1}
+body{ font:400 12px "Oswald", Arial, san-serif;line-height:1}
 ol, ul, dl{list-style:none}
 blockquote, q{quotes: none}
 blockquote:before, blockquote:after,q:before, q:after{content:'';content: none}
@@ -14,9 +14,6 @@ img {margin:0;padding:0;border:0}
 strong{font-weight:300}
 
 html,body{height:100%}
-
-
-body {margin:0;}
 
 #frameborder {
     position:fixed;
@@ -41,7 +38,38 @@ body {margin:0;}
 }
 
 
-.nav {}
+nav {position:fixed;
+color:#333;
+font-size:1.2em;
+letter-spacing:0.1em;
+top:50px;
+width:90%;
+left:0;
+right:0;
+z-index:100;
+}
+
+    nav ul {position:relative;}
+        nav ul.menu{}
+        .menu li {position:relative;
+                display: inline;
+                list-style:none;}
+                .menu li.work {left:20%;}
+                .menu li.about {left:100%; margin-left:-150px;}
+                .menu li.contact {left:100%; margin-left:40px;}
+        nav ul.workmenu {
+            position:absolute;
+            left:20%;
+            top:30px;}
+            .workmenu li{
+                display: inline;
+                list-style:none;
+                margin-right:20px;}
+                .workmenu li.all {}
+                .workmenu li.graphicdesign {}
+                .workmenu li.servicedesign {}
+                .workmenu li.branding {}
+                .workmenu li.illustration {}
 
 
 
@@ -93,13 +121,20 @@ body {margin:0;}
 }
 
 #slider li.slidethree {
-    top:50%; margin-top:-400px;
+    top:50%; margin-top:-325px;
 	-moz-animation:cyclethree 20s ease infinite;
 	-webkit-animation:cyclethree 20s ease infinite;
     animation:cyclethree 20s ease infinite;
 }
 
-3
+#slider li.slidefour {
+    top:50%; margin-top:-80px;
+	-moz-animation:cyclefour 20s ease infinite;
+	-webkit-animation:cyclefour 20s ease infinite;
+    animation:cyclefour 20s ease infinite;
+}
+
+
 @keyframes cycle {
 	0%  {left:150%;}
 	4%  {left:50%; margin-left:-300px;}
@@ -138,8 +173,8 @@ body {margin:0;}
 @keyframes cyclethree {
 	0%  {left:150%;}
 	32% {left:150%;}
-    36% {left:50%; margin-left:-384px;}
-    48% {left:50%; margin-left:-384px;}
+    36% {left:50%; margin-left:-312px;}
+    48% {left:50%; margin-left:-312px;}
     52% {left:-100%;}
 	100%{left:-100%;}
 }
@@ -147,8 +182,27 @@ body {margin:0;}
 @-webkit-keyframes cyclethree {
 	0%  {left:150%;}
 	32% {left:150%;}
-    36% {left:50%; margin-left:-384px;}
-    48% {left:50%; margin-left:-384px;}
+    36% {left:50%; margin-left:-312px;}
+    48% {left:50%; margin-left:-312px;}
     52% {left:-100%;}
+	100%{left:-100%;}
+}
+
+
+@keyframes cyclefour {
+	0%  {left:150%;}
+	48% {left:150%;}
+    52% {left:50%; margin-left:-285px;}
+    64% {left:50%; margin-left:-285px;}
+    68% {left:-100%;}
+	100%{left:-100%;}
+}
+
+@-webkit-keyframes cyclefour {
+	0%  {left:150%;}
+	48% {left:150%;}
+    52% {left:50%; margin-left:-285px;}
+    64% {left:50%; margin-left:-285px;}
+    68% {left:-100%;}
 	100%{left:-100%;}
 }
