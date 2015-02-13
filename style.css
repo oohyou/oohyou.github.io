@@ -251,28 +251,11 @@ z-index:100;
 
 
 /* 반응형 */
-@media (max-width:900px) {
-   #frameborder {
-        position:fixed;
-        top:10px;
-        left:10px;
-        right:10px;
-        bottom:10px;
-        border:8px;
-        border-color:#333;
-        border-style:solid;
-        z-index:100;
+@media (max-width:640px) {
+   .work ul li{
+        float:left;
+        width:100%;
         }
-
-    .title{
-        border:8px solid #333;
-        font-size:2em;
-        height:;
-        -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
-        -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
-        box-sizing:        border-box;   /* Everything else */
-        }
-
 }
 
 
