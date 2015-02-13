@@ -252,9 +252,14 @@ z-index:100;
 
 /* 반응형 */
 @media (max-width:640px) {
-   .work ul li{
+    .work {
+    width:80%;
+    margin:100px auto;
+    }
+       .work ul li{
         float:left;
         width:100%;
+        margin-bottom:12px;
         }
 }
 
