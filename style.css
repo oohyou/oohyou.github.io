@@ -15,7 +15,20 @@ strong{font-weight:300}
 
 html,body{height:100%}
 
+.fullscreen {width:100%;height:100%}
+.fullwidth {width:100%;}
+
 .clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+
+
+/* TYPOGRAPHY */
+h1{font-size:2.5em;color:#333;letter-spacing:0.1em;}
+.menutitle {
+        left:14%;
+        font-size:2.5em;color:#333;letter-spacing:0.1em;
+        margin-bottom:80px;}
+
 
 #frameborder {
     position:fixed;
@@ -29,6 +42,8 @@ html,body{height:100%}
     z-index:100;
 }
 
+
+/* LOGO */
 .toplogo {
     position:absolute;
     left:50%;
@@ -43,10 +58,13 @@ html,body{height:100%}
     left:50px;;
     top:42px;
     z-index:9;
-    width:6%;
+    width:4%;
     }
     .basiclogo img{width:100%;}
 
+
+
+/* NAVIGATION */
 nav {position:fixed;
 color:#333;
 font-size:1.2em;
@@ -81,24 +99,29 @@ z-index:100;
 
 
 
-.bgimg {
-    position: absolute;
-    z-index:2;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-animation:imageSlide 16s ease infinite;
-    animation:disolve 10s ease infinite;}
 
 
-.page {
-    width:100%;
-    height:100%}
+
+/* ABOUT */
+.about {
+    width:86%;
+    margin:100px auto;}
+
+    .about ul li{
+        float:left;
+        width:32.4%;
+        margin-right:1.4%;
+        margin-bottom:7%;
+        }
+
+    .about ul li:nth-child(3n) {
+        margin-right: 0;
+        }
+
+        .about ul li img{width:100%;}
 
 
+/* WORK */
 .work {
     width:86%;
     margin:100px auto;
@@ -119,8 +142,6 @@ z-index:100;
 
     .title{
         border:10px solid #333;
-        font-size:2em;
-        height:;
         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
         box-sizing:        border-box;   /* Everything else */
@@ -130,7 +151,7 @@ z-index:100;
 
 
 
-/* Slider */
+/* SLIDER */
 #slider {
 	width:100%;
 	height:100%;
@@ -178,7 +199,7 @@ z-index:100;
     animation:cyclefour 20s ease infinite;
 }
 
-
+/* SLIDE CYCLE */
 @keyframes cycle {
 	0%  {left:150%;}
 	4%  {left:50%; margin-left:-484px;}
@@ -257,7 +278,7 @@ z-index:100;
 
 
 
-/* 스마트폰 */
+/* 반응형-스마트폰 */
 @media (max-width:500px) {
 
        #frameborder {
@@ -277,7 +298,7 @@ z-index:100;
         left:40px;;
         top:40px;
         z-index:9;
-        width:12%;
+        width:38px;
         }
         .basiclogo img{width:100%;}
 
@@ -420,8 +441,6 @@ z-index:100;
             }
 
 
-
-
     .toplogo {
         position:absolute;
         left:50%;
@@ -449,7 +468,7 @@ z-index:100;
     left:50px;;
     top:42px;
     z-index:9;
-    width:57px;
+    width:38px;
     }
         .basiclogo img{width:100%;}
 
