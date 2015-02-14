@@ -283,14 +283,21 @@ z-index:100;
 
        #frameborder {
         position:fixed;
-        top:12px;
-        left:12px;
-        right:12px;
-        bottom:12px;
-        border:12px;
+        top:8px;
+        left:8px;
+        right:8px;
+        bottom:8px;
+        border:6px;
         border-color:#333;
         border-style:solid;
         z-index:100;
+        }
+
+        .title{
+        border:6px solid #333;
+        -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+        -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+        box-sizing:        border-box;   /* Everything else */
         }
 
     .basiclogo {
