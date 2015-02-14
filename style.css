@@ -81,7 +81,7 @@ z-index:100;
                 .menu li {position:absolute;}
                         .menu li.aboutmenu {left:250px;}
                         .menu li.workmenu {left:350px;}
-                        .menu li.contactmenu {left:100%; margin-left:-100px;}
+                        .menu li.contactmenu {left:100%; margin-left:-100px;display:none;}
 
         nav ul.workmenu {
             position:absolute;
@@ -96,8 +96,6 @@ z-index:100;
                         .workmenu li.servicedesign {}
                         .workmenu li.branding {}
                         .workmenu li.illustration {}
-
-
 
 
 
@@ -119,6 +117,7 @@ z-index:100;
         }
 
         .about ul li img{width:100%;}
+
 
 
 /* WORK */
@@ -293,6 +292,26 @@ z-index:100;
         z-index:100;
         }
 
+        nav {position:fixed;
+            color:#333;
+            font-size:1em;
+            letter-spacing:0.1em;
+            top:40px;}
+
+        nav ul.menu{}
+            .menu li {position:absolute;}
+                    .menu li.aboutmenu {left:40%;}
+                    .menu li.workmenu {left:60%;}
+
+            nav ul.workmenu {
+                position:absolute;
+                left:60%;
+                top:30px;
+                margin-bottom:10px;}
+
+                nav ul.workmenu li {display:block; margin-bottom:10px;}
+
+
         .title{
         border:6px solid #333;
         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
@@ -302,8 +321,8 @@ z-index:100;
 
     .basiclogo {
         position:fixed;
-        left:40px;;
-        top:40px;
+        left:10%;
+        top:30px;
         z-index:9;
         width:38px;
         }
@@ -526,9 +545,11 @@ z-index:100;
     }
 
 
+
 /* 일반 데스크탑 */
 @media (min-width: 960px) and (max-width: 1599px) {
     }
+
 
 
 /* 큰화면 */
