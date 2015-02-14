@@ -250,8 +250,8 @@ z-index:100;
 
 
 
-/* 반응형 */
-@media (max-width:700px) {
+/* 스마트폰 */
+@media (max-width:500px) {
 
        #frameborder {
         position:fixed;
@@ -422,9 +422,18 @@ z-index:100;
 }
 
 
+/* 태블릿PC */
+@media (min-width: 501px) and (max-width: 899px) {
+    }
 
 
-@media (min-width:2000px) {
+/* 태블릿PC */
+@media (min-width: 900px) and (max-width: 1599px) {
+    }
+
+
+/* 큰화면 */
+@media (min-width:1600px) {
    #frameborder {
         position:fixed;
         top:14px;
