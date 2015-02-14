@@ -251,7 +251,7 @@ z-index:100;
 
 
 /* 스마트폰 */
-@media (max-width:500px) {
+@media (max-width:2000px) {
 
        #frameborder {
         position:fixed;
