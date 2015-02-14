@@ -36,41 +36,48 @@ html,body{height:100%}
     width:272px;
     margin:-186px 0 0 -136px;
     z-index:0;
-}
+    }
 
+.basiclogo {
+    position:fixed;
+    left:50px;;
+    top:42px;
+    z-index:9;
+    width:6%;
+    }
+    .basiclogo img{width:100%;}
 
 nav {position:fixed;
 color:#333;
 font-size:1.2em;
 letter-spacing:0.1em;
 top:50px;
-width:90%;
 left:0;
 right:0;
 z-index:100;
 }
 
     nav ul {position:relative;}
+
         nav ul.menu{}
-        .menu li {position:relative;
-                display: inline;
-                list-style:none;}
-                .menu li.work {left:20%;}
-                .menu li.about {left:100%; margin-left:-150px;}
-                .menu li.contact {left:100%; margin-left:40px;}
+                .menu li {position:absolute;}
+                        .menu li.aboutmenu {left:250px;}
+                        .menu li.workmenu {left:350px;}
+                        .menu li.contactmenu {left:100%; margin-left:-100px;}
+
         nav ul.workmenu {
             position:absolute;
-            left:20%;
-            top:30px;}
-            .workmenu li{
-                display: inline;
-                list-style:none;
-                margin-right:20px;}
-                .workmenu li.all {}
-                .workmenu li.graphicdesign {}
-                .workmenu li.servicedesign {}
-                .workmenu li.branding {}
-                .workmenu li.illustration {}
+            left:350px;
+            top:30px;
+            margin-bottom:10px;}
+                .workmenu li{
+                    display: inline;
+                    margin-right:20px;}
+                        .workmenu li.all {}
+                        .workmenu li.graphicdesign {}
+                        .workmenu li.servicedesign {}
+                        .workmenu li.branding {}
+                        .workmenu li.illustration {}
 
 
 
@@ -251,7 +258,7 @@ z-index:100;
 
 
 /* 스마트폰 */
-@media (max-width:2000px) {
+@media (max-width:500px) {
 
        #frameborder {
         position:fixed;
@@ -264,6 +271,16 @@ z-index:100;
         border-style:solid;
         z-index:100;
         }
+
+    .basiclogo {
+        position:fixed;
+        left:40px;;
+        top:40px;
+        z-index:9;
+        width:12%;
+        }
+        .basiclogo img{width:100%;}
+
 
     .work {
     width:100%;
@@ -405,8 +422,6 @@ z-index:100;
 
 
 
-
-
     .toplogo {
         position:absolute;
         left:50%;
@@ -423,12 +438,42 @@ z-index:100;
 
 
 /* 태블릿PC */
-@media (min-width: 501px) and (max-width: 899px) {
+@media (min-width: 501px) and (max-width: 959px) {
+        .workmenu li{
+            display: block;
+            margin-right:0px;
+            margin-bottom:20px;}
+
+    .basiclogo {
+    position:fixed;
+    left:50px;;
+    top:42px;
+    z-index:9;
+    width:57px;
+    }
+        .basiclogo img{width:100%;}
+
+
+
+    .work ul li{
+        float:left;
+        width:49%;
+        margin-right:2%;
+        margin-bottom:2%;
+        }
+        .work ul li:nth-child(3n) {
+            margin-right:2%;
+            }
+        .work ul li:nth-child(2n) {
+            margin-right:0;
+            }
+
+
     }
 
 
-/* 태블릿PC */
-@media (min-width: 900px) and (max-width: 1599px) {
+/* 일반 데스크탑 */
+@media (min-width: 960px) and (max-width: 1599px) {
     }
 
 
