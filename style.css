@@ -1,8 +1,20 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'DIN 1451 Std Engschrift';
+    src: url('font/din_1451_std_engschrift.eot');
+    src: url('font/din_1451_std_engschrift.eot?#iefix') format('embedded-opentype'),/* ie 6,7,8 적용 embedded-opentype ie 8,9 적용 */
+        url('font/din_1451_std_engschrift.svg#DIN 1451 Std Engschrift') format('svg'),/*모바일*/
+        url('font/din_1451_std_engschrift.woff') format('woff'), /* ie 제외한 나머지 */
+        url('font/din_1451_std_engschrift.ttf') format('truetype');
+    font-weight: normal; font-style: normal;}
+
+
 /*html5 reset*/
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong,sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header,hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font: inherit;vertical-align: baseline}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section{display: block}
 html,body{-webkit-text-size-adjust:none}
-body{font:400 12px "Oswald", Arial, san-serif;line-height:1}
+body{font-family:"DIN 1451 Std Engschrift", Arial, san-serif;line-height:1}
 ol, ul, dl{list-style:none}
 blockquote, q{quotes: none}
 blockquote:before, blockquote:after,q:before, q:after{content:'';content: none}
@@ -15,7 +27,7 @@ strong{font-weight:300}
 
 html,body{height:100%}
 
-.fullscreen {width:100%;height:100%}
+.fullscreen {width:100%;height:100%;}
 .fullwidth {width:100%;}
 
 .clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
@@ -29,7 +41,7 @@ h1{font-size:2.5em;color:#333;letter-spacing:0.1em;}
         font-size:2.5em;color:#333;letter-spacing:0.1em;
         margin-bottom:80px;}
 
-
+/*
 #frameborder {
     position:fixed;
     top:12px;
@@ -41,6 +53,13 @@ h1{font-size:2.5em;color:#333;letter-spacing:0.1em;}
     border-style:solid;
     z-index:99;
 }
+*/
+#frameborder-top {position:fixed;top:12px;left:12px;right:12px;height:10px;background-color:#333;z-index:99;}
+#frameborder-right {position:fixed;top:12px;right:12px;bottom:12px;width:10px;background-color:#333;z-index:99;}
+#frameborder-bottom {position:fixed;bottom:12px;left:12px;right:12px;height:10px;background-color:#333;z-index:99;}
+#frameborder-left {position:fixed;top:12px;left:12px;bottom:12px;width:10px;background-color:#333;z-index:99;}
+
+
 
 
 /* LOGO */
@@ -133,7 +152,7 @@ z-index:100;
                                                     transition-delay: 0.4s;}
 
                         nav ul.menu li.workmenu:hover ul.category li{transform:translate(0,0)}
-                        nav ul.menu li.workmenu:hover .workbar{width:550px;}
+                        nav ul.menu li.workmenu:hover .workbar{width:590px;}
                         nav ul.menu li.aboutmenu:hover .aboutbar{width:90px;}
 
 
@@ -165,16 +184,106 @@ z-index:100;
 
     .work ul li{
         float:left;
+        position:relative;
         width:32.4%;
         margin-right: 1.4%;
         margin-bottom:1.4%;
+        overflow:hidden;
         }
 
     .work ul li:nth-child(3n) {
         margin-right: 0;
         }
 
+    .work ul li .thumbnail{
+        position:absolute;
+        left:0;
+        width:100%;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        }
+            .thumbnail img{width:100%;}
+
     .work ul li img{width:100%;}
+
+
+    .work ul li .worktitle{
+            position:absolute;
+            top:8%;left:-100%;
+            color:#333;
+            font-size:2.0em;
+            letter-spacing: 2pt;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            z-index:9;
+            }
+
+        .work ul li .worktitle-white{
+            position:absolute;
+            top:8%;left:-100%;
+            color:white;
+            font-size:2.0em;
+            letter-spacing: 2pt;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            z-index:9;
+            }
+
+        .work ul li .underline{
+            position:absolute;
+            top:16%;left:-150%;
+            height:10px;
+            background-color:#333;
+            transition: all 0.5s;
+            -webkit-transition: all 0.6s;
+            z-index:9;
+            }
+
+        .work ul li .underline-white{
+            position:absolute;
+            top:16%;left:-150%;
+            height:10px;
+            background-color:white;
+            transition: all 0.5s;
+            -webkit-transition: all 0.6s;
+            z-index:9;
+            }
+
+        .work ul li .subtitle{
+            position:absolute;
+            top:24%;left:-200%;
+            font-size:1.2em;
+            letter-spacing:1px;
+            line-height:1.7em;
+            color:#333;
+            transition: all 0.7s;
+            -webkit-transition: all 0.7s;
+            z-index:9;
+            }
+
+        .work ul li .subtitle-white{
+            position:absolute;
+            top:24%;left:-200%;
+            font-size:1.2em;
+            letter-spacing:1px;
+            line-height:1.7em;
+            color:white;
+            transition: all 0.7s;
+            -webkit-transition: all 0.7s;
+            z-index:9;
+            }
+
+
+    .work ul li:hover .thumbnail{left:65%}
+    .work ul li:hover .worktitle-white{left:8%}
+    .work ul li:hover .underline-white{left:8%}
+    .work ul li:hover .subtitle-white{left:8%}
+    .work ul li:hover .worktitle{left:8%}
+    .work ul li:hover .underline{left:8%}
+    .work ul li:hover .subtitle{left:8%}
+
+
+
 
     .title{
         border:10px solid #333;
@@ -579,35 +688,3 @@ z-index:100;
             }
     }
 
-
-
-/* 일반 데스크탑 */
-@media (min-width: 960px) and (max-width: 1599px) {
-    }
-
-
-
-/* 큰화면 */
-@media (min-width:1600px) {
-   #frameborder {
-        position:fixed;
-        top:14px;
-        left:14px;
-        right:14px;
-        bottom:14px;
-        border:12px;
-        border-color:#333;
-        border-style:solid;
-        z-index:100;
-        }
-
-    .title{
-        border:14px solid #333;
-        font-size:2em;
-        height:;
-        -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
-        -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
-        box-sizing:        border-box;   /* Everything else */
-        }
-
-}
