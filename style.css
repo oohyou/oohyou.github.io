@@ -477,10 +477,12 @@ z-index:100;
         .work ul li img {width:100%;}
 
         .work ul li .underline{
+            top:18%;
             height:6px;
             }
 
         .work ul li .underline-white{
+            top:18%;
             height:6px;
             }
 
