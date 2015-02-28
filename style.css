@@ -35,25 +35,15 @@ html,body{height:100%}
 
 
 /* TYPOGRAPHY */
-h1{font-size:2.5em;color:#333;letter-spacing:0.1em;}
+h1{font-size:2.5em;color:#333;letter-spacing:0.1em;line-height:1.25em;}
+h2{font-size:2.2em;color:#333;letter-spacing:0.1em;line-height:1.25em;}
+h3{font-size:2.0em;color:#333;letter-spacing:0.1em;line-height:1.25em;}
 .menutitle {
         left:14%;
         font-size:2.5em;color:#333;letter-spacing:0.1em;
         margin-bottom:80px;}
 
-/*
-#frameborder {
-    position:fixed;
-    top:12px;
-    left:12px;
-    right:12px;
-    bottom:12px;
-    border:10px;
-    border-color:#333;
-    border-style:solid;
-    z-index:99;
-}
-*/
+
 #frameborder-top {position:fixed;top:12px;left:12px;right:12px;height:10px;background-color:#333;z-index:99;}
 #frameborder-right {position:fixed;top:12px;right:12px;bottom:12px;width:10px;background-color:#333;z-index:99;}
 #frameborder-bottom {position:fixed;bottom:12px;left:12px;right:12px;height:10px;background-color:#333;z-index:99;}
@@ -157,18 +147,18 @@ z-index:100;
 
 
 /* ABOUT */
-.about {
+#about {
     width:86%;
     margin:100px auto;}
 
-    .about ul li{
+    #about ul li{
         float:left;
         width:32.4%;
         margin-right:1.4%;
         margin-bottom:7%;
         }
 
-    .about ul li:nth-child(3n) {
+    #about ul li:nth-child(3n) {
         margin-right: 0;
         }
 
@@ -254,7 +244,7 @@ z-index:100;
             top:24%;left:-200%;
             font-size:1.2em;
             letter-spacing:1px;
-            line-height:1.7em;
+            line-height:1.3em;
             color:#333;
             transition: all 0.7s;
             -webkit-transition: all 0.7s;
@@ -266,7 +256,7 @@ z-index:100;
             top:24%;left:-200%;
             font-size:1.2em;
             letter-spacing:1px;
-            line-height:1.7em;
+            line-height:1.3em;
             color:white;
             transition: all 0.7s;
             -webkit-transition: all 0.7s;
@@ -426,17 +416,10 @@ z-index:100;
 /* 반응형-스마트폰 */
 @media (max-width:500px) {
 
-       #frameborder {
-        position:fixed;
-        top:8px;
-        left:8px;
-        right:8px;
-        bottom:8px;
-        border:6px;
-        border-color:#333;
-        border-style:solid;
-        z-index:100;
-        }
+    #frameborder-top {position:fixed;top:8px;left:8px;right:8px;height:6px;background-color:#333;z-index:99;}
+    #frameborder-right {position:fixed;top:8px;right:8px;bottom:8px;width:6px;background-color:#333;z-index:99;}
+    #frameborder-bottom {position:fixed;bottom:8px;left:8px;right:8px;height:6px;background-color:#333;z-index:99;}
+    #frameborder-left {position:fixed;top:8px;left:8px;bottom:8px;width:6px;background-color:#333;z-index:99;}
 
         nav {position:fixed;
             color:#333;
@@ -488,22 +471,22 @@ z-index:100;
 
         .work ul li img {width:100%;}
 
-
-    .about {
-    width:100%;
-    margin:100px auto;
-    }
-
-       .about ul li{
-        float:left;
-        width:80%;
-        margin:0 10% 12px 10%;
+    /* 반응형-스마트폰 - 어바웃 */
+    #about {
+        width:100%;
+        margin:100px auto;
         }
 
-        .about ul li img {width:100%;}
+        #about ul li{
+            float:left;
+            width:80%;
+            margin:0 10% 12px 10%;
+            }
+
+            #about ul li img {width:30%;}
 
 
-
+    /* 반응형-스마트폰 - 슬라이더 */
     #slider {
         width:100%;
         height:100%;
@@ -512,132 +495,132 @@ z-index:100;
         overflow:hidden;
         }
 
-        #slider ul {
-            position:relative;
-            width:100%;
-            height:100%;
-            }
+            #slider ul {
+                position:relative;
+                width:100%;
+                height:100%;
+                }
 
-        #slider li {
+            #slider li {
+                position:absolute;
+                list-style:none;
+                width:300px;
+                }
+
+                #slider li img {width:100%;}
+
+                #slider li.slideone {
+                    top:50%; margin-top:-124px;
+                    -moz-animation:cycle 20s ease infinite;
+                    -webkit-animation:cycle 20s ease infinite;
+                    animation:cycle 20s ease infinite;
+                }
+
+                #slider li.slidetwo {
+                    top:50%; margin-top:-124px;
+                    -moz-animation:cycletwo 20s ease infinite;
+                    -webkit-animation:cycletwo 20s ease infinite;
+                    animation:cycletwo 20s ease infinite;
+                }
+
+                #slider li.slidethree {
+                    top:50%; margin-top:-124px;
+                    -moz-animation:cyclethree 20s ease infinite;
+                    -webkit-animation:cyclethree 20s ease infinite;
+                    animation:cyclethree 20s ease infinite;
+                }
+
+                #slider li.slidefour {
+                    top:50%; margin-top:-124px;
+                    -moz-animation:cyclefour 20s ease infinite;
+                    -webkit-animation:cyclefour 20s ease infinite;
+                    animation:cyclefour 20s ease infinite;
+                }
+
+
+                @keyframes cycle {
+                    0%  {left:150%;}
+                    4%  {left:50%; margin-left:-150px;}
+                    16% {left:50%; margin-left:-150px;}
+                    20% {left:-100%;}
+                    100%{left:-100%;}
+                }
+
+
+                @-webkit-keyframes cycle {
+                    0%  {left:150%;}
+                    4%  {left:50%; margin-left:-150px;}
+                    16% {left:50%; margin-left:-150px;}
+                    20% {left:-100%;}
+                    100%{left:-100%;}
+                }
+
+                @keyframes cycletwo {
+                    0%  {left:150%;}
+                    16% {left:150%;}
+                    20% {left:50%; margin-left:-150px;}
+                    32% {left:50%; margin-left:-150px;}
+                    36% {left:-100%;}
+                    100%{left:-100%;}
+                }
+
+                @-webkit-keyframes cycletwo {
+                    0%  {left:150%;}
+                    16% {left:150%;}
+                    20% {left:50%; margin-left:-150px;}
+                    32% {left:50%; margin-left:-150px;}
+                    36% {left:-100%;}
+                    100%{left:-100%;}
+                }
+
+                @keyframes cyclethree {
+                    0%  {left:150%;}
+                    32% {left:150%;}
+                    36% {left:50%; margin-left:-150px;}
+                    48% {left:50%; margin-left:-150px;}
+                    52% {left:-100%;}
+                    100%{left:-100%;}
+                }
+
+                @-webkit-keyframes cyclethree {
+                    0%  {left:150%;}
+                    32% {left:150%;}
+                    36% {left:50%; margin-left:-150px;}
+                    48% {left:50%; margin-left:-150px;}
+                    52% {left:-100%;}
+                    100%{left:-100%;}
+                }
+
+
+                @keyframes cyclefour {
+                    0%  {left:150%;}
+                    48% {left:150%;}
+                    52% {left:50%; margin-left:-150px;}
+                    64% {left:50%; margin-left:-150px;}
+                    68% {left:-100%;}
+                    100%{left:-100%;}
+                }
+
+                @-webkit-keyframes cyclefour {
+                    0%  {left:150%;}
+                    48% {left:150%;}
+                    52% {left:50%; margin-left:-150px;}
+                    64% {left:50%; margin-left:-150px;}
+                    68% {left:-100%;}
+                    100%{left:-100%;}
+                }
+
+
+        .toplogo {
             position:absolute;
-            list-style:none;
-            width:300px;
+            left:50%;
+            top:50%;
+            width:50%;
+            margin:-123px 0 0 -90px;
+            z-index:0;
             }
 
-            #slider li img {width:100%;}
-
-            #slider li.slideone {
-                top:50%; margin-top:-124px;
-                -moz-animation:cycle 20s ease infinite;
-                -webkit-animation:cycle 20s ease infinite;
-                animation:cycle 20s ease infinite;
-            }
-
-            #slider li.slidetwo {
-                top:50%; margin-top:-124px;
-                -moz-animation:cycletwo 20s ease infinite;
-                -webkit-animation:cycletwo 20s ease infinite;
-                animation:cycletwo 20s ease infinite;
-            }
-
-            #slider li.slidethree {
-                top:50%; margin-top:-124px;
-                -moz-animation:cyclethree 20s ease infinite;
-                -webkit-animation:cyclethree 20s ease infinite;
-                animation:cyclethree 20s ease infinite;
-            }
-
-            #slider li.slidefour {
-                top:50%; margin-top:-124px;
-                -moz-animation:cyclefour 20s ease infinite;
-                -webkit-animation:cyclefour 20s ease infinite;
-                animation:cyclefour 20s ease infinite;
-            }
-
-
-            @keyframes cycle {
-                0%  {left:150%;}
-                4%  {left:50%; margin-left:-150px;}
-                16% {left:50%; margin-left:-150px;}
-                20% {left:-100%;}
-                100%{left:-100%;}
-            }
-
-
-            @-webkit-keyframes cycle {
-                0%  {left:150%;}
-                4%  {left:50%; margin-left:-150px;}
-                16% {left:50%; margin-left:-150px;}
-                20% {left:-100%;}
-                100%{left:-100%;}
-            }
-
-            @keyframes cycletwo {
-                0%  {left:150%;}
-                16% {left:150%;}
-                20% {left:50%; margin-left:-150px;}
-                32% {left:50%; margin-left:-150px;}
-                36% {left:-100%;}
-                100%{left:-100%;}
-            }
-
-            @-webkit-keyframes cycletwo {
-                0%  {left:150%;}
-                16% {left:150%;}
-                20% {left:50%; margin-left:-150px;}
-                32% {left:50%; margin-left:-150px;}
-                36% {left:-100%;}
-                100%{left:-100%;}
-            }
-
-            @keyframes cyclethree {
-                0%  {left:150%;}
-                32% {left:150%;}
-                36% {left:50%; margin-left:-150px;}
-                48% {left:50%; margin-left:-150px;}
-                52% {left:-100%;}
-                100%{left:-100%;}
-            }
-
-            @-webkit-keyframes cyclethree {
-                0%  {left:150%;}
-                32% {left:150%;}
-                36% {left:50%; margin-left:-150px;}
-                48% {left:50%; margin-left:-150px;}
-                52% {left:-100%;}
-                100%{left:-100%;}
-            }
-
-
-            @keyframes cyclefour {
-                0%  {left:150%;}
-                48% {left:150%;}
-                52% {left:50%; margin-left:-150px;}
-                64% {left:50%; margin-left:-150px;}
-                68% {left:-100%;}
-                100%{left:-100%;}
-            }
-
-            @-webkit-keyframes cyclefour {
-                0%  {left:150%;}
-                48% {left:150%;}
-                52% {left:50%; margin-left:-150px;}
-                64% {left:50%; margin-left:-150px;}
-                68% {left:-100%;}
-                100%{left:-100%;}
-            }
-
-
-    .toplogo {
-        position:absolute;
-        left:50%;
-        top:50%;
-        width:50%;
-        margin:-123px 0 0 -90px;
-        z-index:0;
-        }
-
-        .toplogo img{width:180px;}
+            .toplogo img{width:180px;}
 
 
 }
@@ -674,16 +657,16 @@ z-index:100;
             margin-right:0;
             }
 
-    .about ul li{
+    #about ul li{
         float:left;
         width:49%;
         margin-right:2%;
         margin-bottom:2%;
         }
-        .about ul li:nth-child(3n) {
+        #about ul li:nth-child(3n) {
             margin-right:2%;
             }
-        .about ul li:nth-child(2n) {
+        #about ul li:nth-child(2n) {
             margin-right:0;
             }
     }
