@@ -8,16 +8,16 @@
         <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
     </head>
 
-    <body>
+    <body  data-page="index">
         <nav><ul class="menu">
             <li class="aboutmenu">ABOUT
                 <div class="aboutbar"></div></li>
             <li class="workmenu">WORK
                 <div class="workbar"></div>
                 <ul class="category">
-                    <li class="all">ALL</li>
-                    <li class="graphicdesign">GRAPHIC DESIGN</li>
-                    <li class="servicedesign">SERVICE DESIGN/UX/UI</li>
+                    <li class="all"><a href="javascript:void(0)" data-filter="*">ALL</a></li>
+                    <li class="graphicdesign"><a href="javascript:void(0)" data-filter=".graphic">GRAPHIC DESIGN</a></li>
+                    <li class="servicedesign"><a href="javascript:void(0)" data-filter=".service">SERVICE DESIGN/UX/UI</a></li>
                     <li class="branding">BRANDING</li>
                     <li class="illustration">ILLUSTRATION</li>
                 </ul>
@@ -79,11 +79,11 @@
 
 
 
-    <div class="work">
+    <div class="work isotope js-isotope">
         <ul class="clearfix">
-            <li class="title"><img src="img/work/title_graphic.png"></li>
-            <li style="background-color:#2a1d1c;">
-                <div class="worktitle-white">ARCHETYPE</div>
+            <li class="title item design graphic text01" data-category="graphic"><img src="img/work/title_graphic.png"></li>
+            <li style="background-color:#2a1d1c;" class="item design service text02" data-category="service">
+                <div class="item worktitle-white">ARCHETYPE</div>
                 <div class="underline-white" style="width:135px"></div>
                 <div class="subtitle-white">A EXPERIMENTAL GRAPHIC <br>FROM ELECTRONIC CRAFT</div>
                 <div class="thumbnail"><img src="img/work/archetype1.png"></div>
@@ -113,9 +113,18 @@
             <li><img src="img/work/saladm_1.png"></li>
             <li><img src="img/work/greenroom_thumb.png"></li>
         </ul>
+		<div class="info">
+			<div class="text01">
+				123
+			</div>
+			<div class="text02">
+				456
+			</div>
+		</div>
     </div>
-
-
-
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
     </body>
 </html>
