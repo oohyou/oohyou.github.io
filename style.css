@@ -421,6 +421,11 @@ z-index:100;
     #frameborder-bottom {position:fixed;bottom:8px;left:8px;right:8px;height:6px;background-color:#333;z-index:99;}
     #frameborder-left {position:fixed;top:8px;left:8px;bottom:8px;width:6px;background-color:#333;z-index:99;}
 
+
+    .fullscreen {width:100%;}
+
+
+
         nav {position:fixed;
             color:#333;
             font-size:1em;
@@ -470,6 +475,16 @@ z-index:100;
         }
 
         .work ul li img {width:100%;}
+
+        .work ul li .underline{
+            height:6px;
+            }
+
+        .work ul li .underline-white{
+            height:6px;
+            }
+
+
 
     /* 반응형-스마트폰 - 어바웃 */
     #about {
