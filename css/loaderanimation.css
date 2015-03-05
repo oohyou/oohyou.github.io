@@ -1,0 +1,169 @@
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+}
+
+    #loader{
+            position:absolute;
+            top:12px;right:12px;bottom:12px;left:12px;
+            z-index:101;
+            overflow: hidden;
+            -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+            -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+            box-sizing:        border-box;   /* Everything else */
+            }
+
+        #loader #loader-top{
+                position:absolute;
+                top:0; left:0; right:0;
+                width:100%; height:10px;
+                background-color:#333;z-index:101;
+                -webkit-animation:aniTopBar 1.6s ease; /* Chrome, Opera 15+, Safari 5+ */
+                animation:aniTopBar 1.6s ease; /* Chrome, Firefox 16+, IE 10+, Opera */
+                }
+
+                @-webkit-keyframes aniTopBar {
+                    0%   {left:-100%}
+                    30%  {left:0}
+                    100% {left:0}}
+                @keyframes aniTopBar {
+                    0%   {left:-100%}
+                    30%  {left:0}
+                    100% {left:0}}
+
+
+        #loader #loader-right{
+                position:absolute;
+                top:0;right:0;bottom:0;
+                width:10px;height:100%;
+                background-color:#333;z-index:101;
+                -webkit-animation:aniRightBar 1.6s ease;
+                animation:aniRightBar 1.6s ease;
+                }
+
+                @-webkit-keyframes aniRightBar {
+                    0%   {top:-100%}
+                    30%  {top:-100%}
+                    50%  {top:0}
+                    100% {top:0}}
+                @keyframes aniRightBar {
+                    0%   {top:-100%}
+                    30%  {top:-100%}
+                    50%  {top:0}
+                    100% {top:0}}
+
+
+
+        #loader #loader-bottom{
+                position:absolute;
+                right:0;left:0;bottom:0;
+                width:100%;height:10px;
+                background-color:#333;z-index:101;
+                -webkit-animation:aniBottomBar 1.6s ease;
+                animation:aniBottomBar 1.6s ease;
+                }
+
+                @-webkit-keyframes aniBottomBar {
+                    0%   {left:100%}
+                    50%  {left:100%}
+                    80% {left:0}
+                    100%{left:0}}
+                @keyframes aniBottomBar {
+                    0%   {left:100%}
+                    50%  {left:100%}
+                    80% {left:0}
+                    100%{left:0}}
+
+
+        #loader #loader-left{
+                position:absolute;
+                top:0;left:0;bottom:0;
+                width:10px;height:100%;
+                background-color:#333;z-index:101;
+                -webkit-animation:aniLeftBar 1.6s ease;
+                animation:aniLeftBar 1.6s ease;
+                }
+
+                @-webkit-keyframes aniLeftBar {
+                    0%   {top:100%}
+                    80%  {top:100%}
+                    100% {top:0}}
+                @keyframes aniLeftBar {
+                    0%   {top:100%}
+                    80%  {top:100%}
+                    100% {top:0}}
+
+
+
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #FFF;
+        z-index: 100;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader {
+        opacity: 0;
+
+        -webkit-transition: all 1s step-end;
+                transition: all 1s step-end;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 1s 1s step-end;
+                transition: all 1s 1s step-end;
+    }
+
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+
+    #content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }
