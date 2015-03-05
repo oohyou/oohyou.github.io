@@ -1,8 +1,11 @@
 var H = $(window).height();
 var W = $(window).width();
 
-$(document).ready(function(){/*
-	$('.isotope').isotope({
+$(document).ready(function(){
+	
+
+/*
+$('.isotope').isotope({
 		  itemSelector: '.item',
 		  getSortData: {
 			name: '.name',
@@ -14,7 +17,6 @@ $(document).ready(function(){/*
 		  }
 	});
 	$('.isotope').isotope({ filter: '.design' });
-
 
 	$('.work ul li').click(function(){
 		var test = $(this).attr("class");
@@ -28,6 +30,24 @@ $(document).ready(function(){/*
 		});		
 	});
 	*/
+$('ul.menu .workmenu ul li').click(function(){
+	 $("html, body").animate({scrollTop:H*2},500);
+});
+
+$('ul.menu .workmenu ul li.all').click(function(){
+	$('.work ul li').fadeIn();
+});
+
+$('ul.menu .workmenu ul li.graphicdesign').click(function(){
+	$('.work ul li:not(.graphic)').fadeOut();
+});
+
+$('ul.menu .workmenu ul li.servicedesign').click(function(){
+	$('.work ul li:not(.servicedesign)').fadeOut();
+});
+
+
+
 
 if(W > 740){
     var previousPositon = 0;
