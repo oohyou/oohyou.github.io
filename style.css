@@ -526,7 +526,6 @@ z-index:100;
         #frameborder-left {position:fixed;top:8px;left:8px;bottom:8px;width:6px;background-color:#333;z-index:99;}
 
 
-    .fullscreen {width:100%;}
     .mobilehide {display:none;}
 
 
@@ -599,15 +598,15 @@ z-index:100;
 
 
     .work {
-    width:100%;
+    width:80%;
     height:auto;
     margin:100px auto;
     }
 
        .work ul li{
         float:left;
-        width:80%;
-        margin:0 10% 12px 10%;
+        width:100%;
+        margin-bottom:12px;
         }
 
         .work ul li img {width:100%;}
@@ -631,10 +630,22 @@ z-index:100;
         margin:0 auto;
         }
 
+        #about .contents {
+        width:100%;
+        height:auto;
+        }
+
+        .aboutmenutitle {
+        font-size:2.5em;color:#333;letter-spacing:0.1em;
+        width:100%;
+        }
+
+
+    #about ul {width:100%;}
+
         #about ul li{
         float:left;
         width:100%;
-        margin-right:12px;
         }
 
         #about ul li h3{font-size:1.2em;line-height:1.2em;}
@@ -642,7 +653,7 @@ z-index:100;
         #about ul li img{height:40px; margin:0 0 12px 0;}
 
                 #about ul li div.whatido{border:6px solid #333;}
-                #about ul li div.iam{border:6px solid #333;}
+                #about ul li div.iam{border:6px solid #333;margin:0;}
                 #about ul li div.touch{border:6px solid #333;}
 
 
@@ -801,6 +812,8 @@ z-index:100;
             .toplogo img{width:180px;}
 
 
+        .copyright{font-size:0.5em;line-height:1.35em;}
+
 }
 
 
@@ -893,4 +906,9 @@ z-index:100;
         #about ul li img{margin-bottom:2px;}
 
     }
+            #about ul li.aboutwrapA {height:auto;}
+
+            #about ul li.aboutwrapB {height:auto;}
+
+            #about ul li.aboutwrapC {height:auto;}
 
