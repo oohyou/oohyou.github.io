@@ -89,7 +89,7 @@ hr {border:0;height:5px;}
 
 .basiclogo {
     position:fixed;
-    left:50px;;
+    left:7%;;
     top:42px;
     z-index:9;
     width:40px;
@@ -114,9 +114,8 @@ z-index:100;
 
         nav ul.menu{}
                 ul.menu > li {position:absolute;}
-                        .menu li.aboutmenu {left:150px;}
-                        .menu li.workmenu {left:250px;}
-                        .menu li.contactmenu {left:100%; margin-left:-100px;display:none;}
+                        .menu li.aboutmenu {left:13%;}
+                        .menu li.workmenu {left:19%;}
 
                              li.aboutmenu .aboutbar{
                                     position:absolute;
@@ -788,6 +787,37 @@ z-index:100;
 
 /* 태블릿PC */
 @media (min-width: 501px) and (max-width: 959px) {
+
+
+
+            nav ul.menu{}
+                ul.menu > li {position:absolute;font-size:0.9em;}
+                        .menu li.aboutmenu {left:16%;}
+                        .menu li.workmenu {left:27%;}
+
+                             li.aboutmenu .aboutbar{
+                                    position:absolute;
+                                    display:block;
+                                    top:1px;
+                                    left:0px;
+                                    width:0px;
+                                    height:10px;
+                                    background-color:#333;
+                                    z-index:101;
+                                    transition:all 0.3s ease;}
+
+                            li.workmenu .workbar{
+                                    position:absolute;
+                                    display:block;
+                                    top:1px;
+                                    left:0px;
+                                    width:0px;
+                                    height:10px;
+                                    background-color:#333;
+                                    z-index:101;
+                                    transition:all 0.5s linear;}
+
+
         .workmenu li{
             display: block;
             margin-right:0px;
@@ -795,7 +825,7 @@ z-index:100;
 
     .basiclogo {
     position:fixed;
-    left:50px;;
+    left:7%;
     top:42px;
     z-index:9;
     width:38px;

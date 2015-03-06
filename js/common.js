@@ -47,9 +47,29 @@ $('ul.menu .workmenu ul li.servicedesign').click(function(){
 });
 
 
+if(W < 959){
+    var previousPositon = 0;
+    var eventPhase = false;
+    var speed = 600;
+    $(document).mousewheel(function(ev, dt) {
+        var T = document.body.scrollTop;
+        if(eventPhase === false) {
+            if(dt === -1 && T === 0) {
+                $('.basiclogo').animate({opacity:1},500);
+            }
+        }
+
+        if(eventPhase === false) {
+            if(dt === 1 && T > 0 && T < H) {
+                $('.basiclogo').animate({opacity:0},500);
+            }
+        }
+    });
+}
 
 
-if(W > 740){
+
+if(W > 959){
     var previousPositon = 0;
     var eventPhase = false;
     var speed = 600;
