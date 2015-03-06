@@ -24,7 +24,7 @@ blockquote:before, blockquote:after,q:before, q:after{content:'';content: none}
 table,th,td{border-spacing:0;border-collapse:collapse}
 h1, h2, h3, h4, h5, h6{font-size:1em}
 input, textarea {font-size:1em}
-a:link, a:visited, a:hover, a:active {color:inherit;font-size:1em;text-decoration:none}
+a:link, a:visited, a:hover, a:active {color:inherit;text-decoration:none}
 img {margin:0;padding:0;border:0}
 strong{font-weight:300}
 
@@ -36,27 +36,6 @@ html,body{height:100%}
 .clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
 
 
-
-
-/* go-up go-down */
-#go-down {
-  position: fixed;
-  right: 50%;
-  bottom: 50px;
-  display: block;
-  width: 18px;
-  height: 18px;
-  border: solid 1px #ff6759;
-  border-width: 0 1px 1px 0;
-  -webkit-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: all .2s;
-  transition: all .2s; }
-  #go-down.go-up {
-    -webkit-transform: rotate(225deg) translate(10px, 10px);
-    transform: rotate(225deg) translate(10px, 10px); }
 
 
 
@@ -76,7 +55,12 @@ p.kop{font-size:1.0em;color:#333;letter-spacing:0.05em;line-height:1.6em;
 
 strong{font-weight:600;}
 
-.menutitle {
+.aboutmenutitle {
+        font-size:2.5em;color:#333;letter-spacing:0.1em;
+        width:86%; margin:0px auto 16px auto; padding-top:160px;
+        }
+
+.workmenutitle {
         font-size:2.5em;color:#333;letter-spacing:0.1em;
         width:86%; margin:160px auto 16px auto;
         }
@@ -118,6 +102,7 @@ hr {border:0;height:5px;}
 
 /* NAVIGATION */
 nav {position:fixed;
+width:86%;
 color:#333;
 font-size:1.2em;
 letter-spacing:0.1em;
@@ -126,12 +111,12 @@ left:0;
 right:0;
 z-index:100;
 }
-
     nav ul {position:relative;}
 
         nav ul.menu{}
                 ul.menu > li {position:absolute;}
                         .menu li.aboutmenu {left:13%;}
+                            a.aboutmenu {left:13%}
                         .menu li.workmenu {left:19%;}
 
                              li.aboutmenu .aboutbar{
@@ -189,7 +174,9 @@ z-index:100;
 
 
 /* ABOUT */
-#about {
+#about{}
+
+#about .contents {
     width:86%;
     height:62%;
     max-height:70%;
@@ -205,11 +192,11 @@ z-index:100;
         overflow: hidden;
         }
 
-    #about ul li.aboutwrapA {height:100%;}
+    #about ul li.aboutwrapA {height:540px;}
 
-    #about ul li.aboutwrapB {height:100%;}
+    #about ul li.aboutwrapB {height:540px;}
 
-    #about ul li.aboutwrapC {height:100%;}
+    #about ul li.aboutwrapC {height:540px;}
 
     #about ul li:nth-child(3n) {
         margin-right: 0;
@@ -219,19 +206,19 @@ z-index:100;
 
 
 
-        #about ul li div.iam{height:29.4%;padding:5% 5% 4% 5%;margin-bottom:3.6%;overflow:hidden;
+        #about ul li div.iam{height:208px;padding:5% 5% 4% 5%;margin-bottom:20px;overflow:hidden;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
                         box-sizing:        border-box;   /* Everything else */}
 
-        #about ul li div.interests{width:100%;height:67%;padding:5% 5% 4% 5%;margin-bottom:3.6%;
+        #about ul li div.interests{width:100%;height:312px;padding:5% 5% 4% 5%;margin-bottom:3.6%;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
                         box-sizing:        border-box;   /* Everything else */}
 
-        #about ul li div.whatido{width:100%;height:67%;padding:5% 5% 4% 5%;margin-bottom:3.6%;
+        #about ul li div.whatido{width:100%;height:100%;padding:5% 5% 4% 5%;margin-bottom:3.6%;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
@@ -249,13 +236,13 @@ z-index:100;
                     flex:1;
                     margin-bottom:15px;}
 
-        #about ul li div.ilearned{width:100%;height:29.4%;padding:5% 5% 4% 5%;margin-bottom:3.6%;
+        #about ul li div.ilearned{width:100%;height:208px;padding:5% 5% 4% 5%;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
                         box-sizing:        border-box;   /* Everything else */}
 
-        #about ul li div.iworked{width:100%;height:48.2%;padding:5% 5% 4% 5%;
+        #about ul li div.iworked{width:100%;height:312px;padding:5% 5% 4% 5%;margin-bottom:20px;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
@@ -264,14 +251,14 @@ z-index:100;
 
 
 /* WORK */
-.wrap {}
+.workwrap {}
 
 .workmenutitle{font-size:2.5em;color:#333;letter-spacing:0.1em;margin-bottom:16px;
         width:100%;}
 
 .work {
     width:86%;
-    margin:0 auto 200px auto;
+    margin:0 auto 100px auto;
     }
 
     .work ul {width:100%;margin:0;}
@@ -524,8 +511,9 @@ z-index:100;
 }
 
 
-
-
+/* Footer */
+.copyright {display: block; position:relative;width:86%;margin:40px auto;
+    color:#333;font-size:0.75em;letter-spacing:0.1em;line-height:1.5em;}
 
 
 
@@ -612,6 +600,7 @@ z-index:100;
 
     .work {
     width:100%;
+    height:auto;
     margin:100px auto;
     }
 
