@@ -1,0 +1,126 @@
+<html>
+    <head><link rel="stylesheet" href="modalstyle.css"></head>
+    <body>
+    
+    
+    
+    
+    
+    <h1>A simple modal popup</h1>
+<hr>
+<h2>TUTORIAL</h2>
+<p>Coming soon</p>
+<hr>
+<h2>DEMO</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit iaculis mi maximus hendrerit. Donec placerat mauris id lorem lobortis, nec gravida purus tempor. Suspendisse tincidunt odio metus, sit amet fermentum eros semper non. Vivamus maximus viverra erat, at fringilla est. Etiam et congue odio. Vestibulum blandit, ex vel tristique lobortis, ligula diam varius est, a scelerisque nibh magna eu libero. Sed et nisi a est varius pharetra ac eu elit. Pellentesque vel neque aliquet, fringilla urna id, consectetur ex. Aliquam quis elementum ipsum. Morbi et tristique lacus, in tempor diam. Curabitur ut est felis. In semper dignissim mauris id ornare. Mauris suscipit dui sed dui interdum, ut efficitur mi congue. Sed sed tristique tellus. Nullam varius lacus sed quam rutrum malesuada.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit iaculis mi maximus hendrerit. Donec placerat mauris id lorem lobortis, nec gravida purus tempor. Suspendisse tincidunt odio metus, sit amet fermentum eros semper non. Vivamus maximus viverra erat, at fringilla est. Etiam et congue odio. Vestibulum blandit, ex vel tristique lobortis, ligula diam varius est, a scelerisque nibh magna eu libero. Sed et nisi a est varius pharetra ac eu elit. Pellentesque vel neque aliquet, fringilla urna id, consectetur ex. Aliquam quis elementum ipsum. Morbi et tristique lacus, in tempor diam. Curabitur ut est felis. In semper dignissim mauris id ornare. Mauris suscipit dui sed dui interdum, ut efficitur mi congue. Sed sed tristique tellus. Nullam varius lacus sed quam rutrum malesuada.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit iaculis mi maximus hendrerit. Donec placerat mauris id lorem lobortis, nec gravida purus tempor. Suspendisse tincidunt odio metus, sit amet fermentum eros semper non. Vivamus maximus viverra erat, at fringilla est. Etiam et congue odio. Vestibulum blandit, ex vel tristique lobortis, ligula diam varius est, a scelerisque nibh magna eu libero. Sed et nisi a est varius pharetra ac eu elit. Pellentesque vel neque aliquet, fringilla urna id, consectetur ex. Aliquam quis elementum ipsum. Morbi et tristique lacus, in tempor diam. Curabitur ut est felis. In semper dignissim mauris id ornare. Mauris suscipit dui sed dui interdum, ut efficitur mi congue. Sed sed tristique tellus. Nullam varius lacus sed quam rutrum malesuada.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit iaculis mi maximus hendrerit. Donec placerat mauris id lorem lobortis, nec gravida purus tempor. Suspendisse tincidunt odio metus, sit amet fermentum eros semper non. Vivamus maximus viverra erat, at fringilla est. Etiam et congue odio. Vestibulum blandit, ex vel tristique lobortis, ligula diam varius est, a scelerisque nibh magna eu libero. Sed et nisi a est varius pharetra ac eu elit. Pellentesque vel neque aliquet, fringilla urna id, consectetur ex. Aliquam quis elementum ipsum. Morbi et tristique lacus, in tempor diam. Curabitur ut est felis. In semper dignissim mauris id ornare. Mauris suscipit dui sed dui interdum, ut efficitur mi congue. Sed sed tristique tellus. Nullam varius lacus sed quam rutrum malesuada.</p>
+
+<!-- MODAL 1 -->
+<a href="#!" class="modal-open-button">Modal example 1</a>
+
+<div id="modal1" class="modal-wrapper">
+  <div class="modal-bg"></div>
+  <div class="modal-content">
+    <div class="modal-container">
+      <div class="modal-banner">
+        <span>Modal Title 1</span>
+        <div class="modal-close"><a class="modal-close-button"  href="#" title="Close">X</a></div>
+      </div>
+      <div class="modal-inner modal-padding">
+        <p>This is the modal</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- MODAL 2 -->
+<button class="modal-open-button">Modal with a Youtube video</button>
+
+<div id="modal2" class="modal-wrapper">
+  <div class="modal-bg"></div>
+  <div class="modal-content">
+    <div class="modal-container">
+      <div class="modal-banner">
+        <span>Modal Title 2</span>
+        <div class="modal-close"><a class="modal-close-button" href="#" title="Close">X</a></div>
+      </div>
+      <div class="modal-inner modal-padding">
+        <h2>Buckysroom</h2>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/_ayquTYBKac?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- MODAL 3 -->
+<button class="modal-open-button">Modal with a form</button>
+
+<div id="modal3" class="modal-wrapper">
+  <div class="modal-bg"></div>
+  <div class="modal-content">
+    <div class="modal-container">
+      <div class="modal-banner">
+        <span>Modal Title 3</span>
+        <div class="modal-close"><a class="modal-close-button"  href="#" title="Close">X</a></div>
+      </div>
+      <div class="modal-inner modal-padding">
+        
+        <h2>An example form</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label><br>
+          <input type="text" name="name" id="name"><br><br>
+          <label for="email">Email Address:</label><br>
+          <input type="text" name="email" id="email"><br><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message"></textarea><br><br>
+          <button type="submit">Submit</button>
+          <button type="reset">Clear Form</button>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+<!-- MODAL 4 -->
+<button class="modal-open-button">Open this modal</button>
+
+<div id="modal4" class="modal-wrapper">
+  <div class="modal-bg"></div>
+  <div class="modal-content">
+    <div class="modal-container">
+      <div class="modal-close"><a class="modal-close-button"  href="#" title="Close">X</a></div>
+      <div class="modal-inner">
+        
+        <img src="https://buckysroom.org/images/homepage_main_image_57.jpg" alt="Buckysroom" />
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit iaculis mi maximus hendrerit. Donec placerat mauris id lorem lobortis, nec gravida purus tempor. Suspendisse tincidunt odio metus, sit amet fermentum eros semper non. Vivamus maximus viverra erat, at fringilla est. Etiam et congue odio. Vestibulum blandit, ex vel tristique lobortis, ligula diam varius est, a scelerisque nibh magna eu libero. Sed et nisi a est varius pharetra ac eu elit. Pellentesque vel neque aliquet, fringilla urna id, consectetur ex. Aliquam quis elementum ipsum. Morbi et tristique lacus, in tempor diam. Curabitur ut est felis. In semper dignissim mauris id ornare. Mauris suscipit dui sed dui interdum, ut efficitur mi congue. Sed sed tristique tellus. Nullam varius lacus sed quam rutrum malesuada.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit iaculis mi maximus hendrerit. Donec placerat mauris id lorem lobortis, nec gravida purus tempor. Suspendisse tincidunt odio metus, sit amet fermentum eros semper non. Vivamus maximus viverra erat, at fringilla est. Etiam et congue odio. Vestibulum blandit, ex vel tristique lobortis, ligula diam varius est, a scelerisque nibh magna eu libero. Sed et nisi a est varius pharetra ac eu elit. Pellentesque vel neque aliquet, fringilla urna id, consectetur ex. Aliquam quis elementum ipsum. Morbi et tristique lacus, in tempor diam. Curabitur ut est felis. In semper dignissim mauris id ornare. Mauris suscipit dui sed dui interdum, ut efficitur mi congue. Sed sed tristique tellus. Nullam varius lacus sed quam rutrum malesuada.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit iaculis mi maximus hendrerit. Donec placerat mauris id lorem lobortis, nec gravida purus tempor. Suspendisse tincidunt odio metus, sit amet fermentum eros semper non. Vivamus maximus viverra erat, at fringilla est. Etiam et congue odio. Vestibulum blandit, ex vel tristique lobortis, ligula diam varius est, a scelerisque nibh magna eu libero. Sed et nisi a est varius pharetra ac eu elit. Pellentesque vel neque aliquet, fringilla urna id, consectetur ex. Aliquam quis elementum ipsum. Morbi et tristique lacus, in tempor diam. Curabitur ut est felis. In semper dignissim mauris id ornare. Mauris suscipit dui sed dui interdum, ut efficitur mi congue. Sed sed tristique tellus. Nullam varius lacus sed quam rutrum malesuada.</p>
+
+    
+    
+    
+    
+    
+    
+    </body></html>

@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/loaderanimation.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="modalstyle.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
@@ -167,13 +168,40 @@
         <div class="workmenutitle">WORK</div>
 
         <ul class="clearfix">
+
             <li class="title design graphic"><img src="img/work/title_graphic.png"></li>
+
+
             <li style="background-color:#2a1d1c;" class="item design graphic">
                 <div class="item worktitle-white">ARCHETYPE</div>
                 <div class="underline-white" style="width:135px"></div>
                 <div class="subtitle-white">A EXPERIMENTAL GRAPHIC <br>FROM ELECTRONIC CRAFT</div>
                 <div class="thumbnail"><img src="img/work/archetype1.png"></div>
                 <img src="img/work/thumbnail_bg/archetypebg.png">
+                <a href="#!" class="modal-open-button"><div class="click"></div></a>
+                 <!-- MODAL 1 -->
+                        <div id="modal1" class="modal-wrapper">
+                          <div class="modal-bg"></div>
+                          <div class="modal-content">
+                            <div class="modal-container">
+                                <div class="modal-close"><a class="modal-close-button"  href="#" title="Close"><img src="img/close.png"></a></div>
+
+                            <div class="modal-inner clearfix">
+                              <div class="project-info">
+                                  <div class="project-title">ARCHETYPE</div>
+                                  <div class="project-sub">IN 2013</div>
+                                  <div class="project-desc">
+                                    <div class="project-desc-eng">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit iaculis mi maximus hendrerit. Donec placerat mauris id lorem lobortis, nec gravida purus tempor.</div>
+
+                                    <div class="project-desc-kor">'expansion to space'이라는 컨셉으로 공간으로 확장을 표현하는 그래픽을 디자인하였다. 타이포그래피와 공간디자인을 통해 가상의 전시를 브랜딩한 프로젝트이다.
+
+                        디자인 내의 각 요소는 디자인 밖 현실의 다양한 요소들과 유기적으로 연결되어 있으며, 그것들이 하나의 유기체로서 살아 숨 쉬게 하는 것이 이 전시 컨셉의 목적이다. </div>
+                                  </div>
+                              </div>
+                              <div class="project-img">
+                                  <img src="img/work/archetype1.png">
+                              </div></div></div></div></div>
+
             </li>
 
             <li><div class="worktitle">HONEYMOON</div>
@@ -182,7 +210,7 @@
                                     FOR MULTISENSORY<br>EXPERIENCE</div>
                 <div class="thumbnail"><img src="img/work/thumb_honeymoon.png"></div>
                 <img src="img/work/thumbnail_bg/whitebg.png">
-            </li>
+                    </li>
 
             <li class="servicedesign"><img src="img/work/thumb_touching.png"></li>
             <li><img src="img/work/thumb_umul.png"></li>
@@ -198,24 +226,51 @@
             <li><img src="img/work/thumb_wemo.png"></li>
             <li><img src="img/work/saladm_1.png"></li>
             <li><img src="img/work/greenroom_thumb.png"></li>
+
+
         </ul>
 
-		<div class="info">
-			<div class="text01">
-				123
-			</div>
-			<div class="text02">
-				456
-			</div>
-		</div>
     </div>
 </div>
+
+
+
+
+
+
+                <!-- MODAL 2 -->
+                        <div id="modal2" class="modal-wrapper">
+                          <div class="modal-bg"></div>
+                          <div class="modal-content">
+                            <div class="modal-container">
+                                <div class="modal-close"><a class="modal-close-button"  href="#" title="Close"><img src="img/close.png"></a></div>
+
+                            <div class="modal-inner clearfix">
+                              <div class="project-info">
+                                  <div class="project-title">HONEYMOON</div>
+                                  <div class="project-sub">IN 2013</div>
+                                  <div class="project-desc">
+                                    <div class="project-desc-eng">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit iaculis mi maximus hendrerit. Donec placerat mauris id lorem lobortis, nec gravida purus tempor.</div>
+
+                                    <div class="project-desc-kor">'expansion to space'이라는 컨셉으로 공간으로 확장을 표현하는 그래픽을 디자인하였다. 타이포그래피와 공간디자인을 통해 가상의 전시를 브랜딩한 프로젝트이다.
+
+                        디자인 내의 각 요소는 디자인 밖 현실의 다양한 요소들과 유기적으로 연결되어 있으며, 그것들이 하나의 유기체로서 살아 숨 쉬게 하는 것이 이 전시 컨셉의 목적이다. </div>
+                                  </div>
+                              </div>
+                              <div class="project-img">
+                                  <img src="img/work/saladm_1.png">
+                              </div></div></div></div></div>
+
+
+
+
+
 
 	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 	<script src="js/loader.js"></script>
-
+    <script type="text/javascript" src="modal.js"></script>
 </body>
 </html>

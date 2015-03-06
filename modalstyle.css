@@ -1,0 +1,115 @@
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 103;
+  display: none;
+}
+
+.modal-bg {
+  /*background-color: rgba(0, 0, 0, 0.8);*/
+  background: rgba(50, 50, 50, 0.8);
+  width: 100%;
+  height: 100%;
+    z-index:102;
+}
+
+.modal-content {
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.modal-container {
+  background-color: #FFFFFF;
+  width: 82%;
+  display: block;
+  z-index: 4;
+  margin: 3% auto;
+  padding: 2%;
+  position: relative;
+  border: 10px solid #333;
+  overflow: hidden;
+}
+
+.modal-banner span {
+  padding: 0 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  bottom: 0;
+        z-index:103;
+}
+.modal-close a.modal-close-button {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.0em;
+}
+
+.modal-inner{position:relative;}
+
+    .project-info{width:32%;float:right;}
+
+        .project-info .project-title{width:100%;font-size:1.6em;color:#333;letter-spacing:0.1em;margin-bottom:10px;line-height:1.2em;}
+        .project-info .project-sub{width:100%;font-size:0.8em;color:#333;margin-bottom:30px;}
+        .project-info .project-desc{width:100%;}
+                .project-desc .project-desc-eng {width:100%;font-size:0.8em;color:#333;
+                                line-height:1.5em; font-family:"Open Sans", sans-serif;margin-bottom:15px;}
+                .project-desc .project-desc-kor {width:100%;font-size:0.8em;color:#333;
+                                line-height:1.5em;font-family:"Open Sans", sans-serif}
+
+    .project-img{width:66%;margin-right:1%;}
+        .project-img img{width:100%;}
+
+
+@media (min-width: 501px) and (max-width: 959px) {
+
+    .project-info{width:100%;float:right;}
+
+        .project-info .project-title{width:100%;font-size:1.6em;color:#333;
+                                letter-spacing:0.1em;margin-bottom:4px;
+                                line-height:1.2em;}
+        .project-info .project-sub{width:100%;font-size:0.8em;color:#333;margin-bottom:30px;}
+        .project-info .project-desc{width:100%;}
+                .project-desc .project-desc-eng {float:left;width:48%;font-size:0.8em;color:#333;
+                                line-height:1.5em; font-family:"Open Sans", sans-serif;
+                                margin-bottom:40px;margin-right:2%;}
+                .project-desc .project-desc-kor {float:left;width:48%;font-size:0.8em;color:#333;
+                                line-height:1.5em;font-family:"Open Sans", sans-serif;
+                                margin-bottom:40px;}
+
+    .project-img{width:100%;margin-right:1%;}
+        .project-img img{width:100%;}
+
+}
+
+
+
+@media (max-width:500px) {
+
+  .modal-container {
+    width:100%;
+    border:6px solid #333;
+    padding:6%;
+    margin:0;
+    -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+  }
+
+    .project-info,.project-sub,.project-img {width:100%;}
+    .project-desc {display:none;}
+}

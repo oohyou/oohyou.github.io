@@ -38,8 +38,25 @@ html,body{height:100%}
 
 
 
-/* Loader */
-
+/* go-up go-down */
+#go-down {
+  position: fixed;
+  right: 50%;
+  bottom: 50px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: solid 1px #ff6759;
+  border-width: 0 1px 1px 0;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+  #go-down.go-up {
+    -webkit-transform: rotate(225deg) translate(10px, 10px);
+    transform: rotate(225deg) translate(10px, 10px); }
 
 
 
@@ -219,8 +236,18 @@ z-index:100;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
                         box-sizing:        border-box;   /* Everything else */}
-                .wrap{width:100%;display: flex;}
-                .domain{width:50%;flex:1;margin-bottom:15px;}
+                .wrap{width:100%;
+                    display:-webkit-box; /* 사파리 및 크롬 호환 */
+                    display:-webkit-flex;
+                    display:-moz-box; /* 오페라 호환 */
+                    display:-ms-flexbox; /* IE10 호환 */
+                    display:flex}
+                .domain{width:50%;
+                    -webkit-flex:1; /* 사파리 및 크롬 */
+                    -moz-flex:1; /* 오페라 */
+                    -ms-flexbox:1; /* IE10 */
+                    flex:1;
+                    margin-bottom:15px;}
 
         #about ul li div.ilearned{width:100%;height:29.4%;padding:5% 5% 4% 5%;margin-bottom:3.6%;
                         border:10px solid #333;
@@ -348,6 +375,9 @@ z-index:100;
             -webkit-transition: all 0.7s;
             z-index:9;
             }
+
+        .work ul li .click{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;}
+
 
 
     .work ul li:hover .thumbnail{left:65%}
