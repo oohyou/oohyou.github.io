@@ -64,7 +64,8 @@
     .project-info{width:32%;float:right;}
 
         .project-info .project-title{width:100%;font-size:1.6em;color:#333;letter-spacing:0.1em;margin-bottom:10px;line-height:1.2em;}
-        .project-info .project-sub{width:100%;font-size:0.8em;color:#333;margin-bottom:30px;}
+        .project-info .project-sub{width:100%;font-size:0.8em;color:#333;margin-bottom:30px;padding-bottom:10px;
+            border-bottom:5px #333 solid;}
         .project-info .project-desc{width:100%;}
                 .project-desc .project-desc-eng {width:100%;font-size:0.8em;color:#333;
                                 line-height:1.5em; font-family:"Open Sans", sans-serif;margin-bottom:15px;}

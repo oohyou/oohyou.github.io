@@ -31,35 +31,41 @@ $('.isotope').isotope({
 	});
 	*/
 $('ul.menu .workmenu ul li').click(function(){
-	 $("html, body").animate({scrollTop:H*2},500);
+	 $("html, body").animate({scrollTop:H*2},600);
 });
 
+
 $('ul.menu .workmenu ul li.all').click(function(){
-	$('.work ul li').fadeIn();
+    $('.work ul li.cate').fadeOut(10);
+	$('.work ul li:not(.cate)').fadeIn(600);
 });
 
 
 $('ul.menu .workmenu ul li.graphicdesign').click(function(){
-	$('.work ul li:not(.graphic)').fadeOut();
-    $('.work ul li.graphic').fadeIn();
+	$('.work ul li:not(.graphic)').fadeOut(10);
+    $('body').addClass('.cate');
+    $('.work ul li.graphic').fadeIn(600);
 });
 
 
 $('ul.menu .workmenu ul li.servicedesign').click(function(){
-	$('.work ul li:not(.service)').fadeOut();
-    $('.work ul li.service').fadeIn();
+    $('body').addClass('.cate');
+	$('.work ul li:not(.service)').fadeOut(10);
+    $('.work ul li.service').fadeIn(600);
 });
 
 
 $('ul.menu .workmenu ul li.branding').click(function(){
-	$('.work ul li:not(.brand)').fadeOut();
-    $('.work ul li.brand').fadeIn();
+	$('.work ul li:not(.brand)').fadeOut(10);
+    $('body').addClass('.cate');
+    $('.work ul li.brand').fadeIn(600);
 });
 
 
 $('ul.menu .workmenu ul li.illustration').click(function(){
-	$('.work ul li:not(.illust)').fadeOut();
-    $('.work ul li.illust').fadeIn(500);
+	$('.work ul li:not(.illust)').fadeOut(10);
+    $('body').addClass('.cate');
+    $('.work ul li.illust').fadeIn(600);
 });
 
 
