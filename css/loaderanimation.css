@@ -126,8 +126,8 @@
             -ms-transform: translateX(-100%);  /* IE 9 */
                 transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
 
-        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     }
 
     .loaded #loader-wrapper .loader-section.section-right {
@@ -135,15 +135,15 @@
             -ms-transform: translateX(100%);  /* IE 9 */
                 transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
 
-        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     }
 
     .loaded #loader {
         opacity: 0;
 
-        -webkit-transition: all 1s step-end;
-                transition: all 1s step-end;
+        -webkit-transition: all 0.7s step-end;
+                transition: all 0.7s step-end;
     }
     .loaded #loader-wrapper {
         visibility: hidden;
@@ -152,8 +152,8 @@
             -ms-transform: translateY(-100%);  /* IE 9 */
                 transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
 
-        -webkit-transition: all 1s 1s step-end;
-                transition: all 1s 1s step-end;
+        -webkit-transition: all 0.7s step-end;
+                transition: all 0.7s step-end;
     }
 
     /* JavaScript Turned Off */
