@@ -400,6 +400,7 @@ z-index:100;
 	margin:0;
     z-index:3;
     overflow:hidden;
+    position:relative;
 }
 
 #slider ul {

@@ -32,6 +32,7 @@ $('.isotope').isotope({
 	*/
 $('ul.menu .workmenu ul li').click(function(){
 	 $("html, body").animate({scrollTop:H*2},600);
+    $('.basiclogo').animate({opacity:1},500);
 });
 
 
@@ -169,9 +170,12 @@ $('a[href^=#about]').on("click",function(){
     if(t.length){
         var tOffset=t.offset().top;
         $('html,body').animate({scrollTop:tOffset-0},'slow');
+        $('.basiclogo').animate({opacity:1},500);
         return false;
     }
+
 });
+
 
 
 $('a[href^=#intro]').on("click",function(){
@@ -180,6 +184,8 @@ $('a[href^=#intro]').on("click",function(){
     if(t.length){
         var tOffset=t.offset().top;
         $('html,body').animate({scrollTop:tOffset-0},'slow');
+        $('.basiclogo').animate({opacity:0},500);
+        return false;
         return false;
     }
 });
