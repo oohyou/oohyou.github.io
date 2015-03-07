@@ -85,7 +85,7 @@ hr {border:0;height:5px;}
     top:50%;
     width:272px;
     margin:-186px 0 0 -136px;
-    z-index:0;
+    z-index:2;
     }
 
 .basiclogo {
@@ -115,9 +115,8 @@ z-index:100;
 
         nav ul.menu{}
                 ul.menu > li {position:absolute;}
-                        .menu li.aboutmenu {left:13%;}
-                            a.aboutmenu {left:13%}
-                        .menu li.workmenu {left:19%;}
+                        .menu li.aboutmenu {left:15%;}
+                        .menu li.workmenu {left:22%;}
 
                              li.aboutmenu .aboutbar{
                                     position:absolute;
@@ -149,7 +148,7 @@ z-index:100;
         nav ul.category {
             height:40px;
             margin-bottom:10px;
-            margin-top:-7px;
+            margin-top:-13px;
             padding-top:20px;
             overflow:hidden;
             }
@@ -170,7 +169,7 @@ z-index:100;
 
                         nav ul.menu li.workmenu:hover ul.category li{transform:translate(0,0)}
                         nav ul.menu li.workmenu:hover .workbar{width:590px;}
-                        nav ul.menu li.aboutmenu:hover .aboutbar{width:90px;}
+                        nav ul.menu li.aboutmenu:hover .aboutbar{width:52px;}
 
 
 /* ABOUT */
@@ -218,7 +217,7 @@ z-index:100;
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
                         box-sizing:        border-box;   /* Everything else */}
 
-        #about ul li div.whatido{width:100%;height:100%;padding:5% 5% 4% 5%;margin-bottom:3.6%;
+        #about ul li div.whatido{width:100%;height:540px;padding:5% 5% 4% 5%;margin-bottom:3.6%;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
@@ -288,13 +287,14 @@ z-index:100;
     .work ul li .thumbnail{
         position:absolute;
         left:0;
+        margin:0;padding:0;
         width:100%;
         transition: all 0.5s;
         -webkit-transition: all 0.5s;
         }
-            .thumbnail img{width:100%;}
+            .thumbnail img{width:100%;height:auto;}
 
-    .work ul li img{width:100%;}
+    .work ul li img{width:100%;height:auto;}
 
 
     .work ul li .worktitle{
@@ -394,7 +394,7 @@ z-index:100;
 	width:100%;
 	height:100%;
 	margin:0;
-    z-index:1;
+    z-index:3;
     overflow:hidden;
 }
 
@@ -513,7 +513,7 @@ z-index:100;
 
 /* Footer */
 .copyright {display: block; position:relative;width:86%;margin:40px auto;
-    color:#333;font-size:0.75em;letter-spacing:0.1em;line-height:1.5em;}
+    color:#333;font-size:0.9em;letter-spacing:0.1em;line-height:1.5em;}
 
 
 
@@ -812,7 +812,7 @@ z-index:100;
             .toplogo img{width:180px;}
 
 
-        .copyright{font-size:0.5em;line-height:1.35em;}
+        .copyright{font-size:0.5em;line-height:1.35em;margin-bottom:30px;}
 
 }
 
@@ -824,8 +824,8 @@ z-index:100;
 
             nav ul.menu{}
                 ul.menu > li {position:absolute;font-size:0.9em;}
-                        .menu li.aboutmenu {left:16%;}
-                        .menu li.workmenu {left:27%;}
+                        .menu li.aboutmenu {left:21%;}
+                        .menu li.workmenu {left:34%;}
 
                              li.aboutmenu .aboutbar{
                                     position:absolute;
@@ -868,7 +868,7 @@ z-index:100;
     nav ul.category {
             height:80px;
             margin-bottom:10px;
-            margin-top:-7px;
+            margin-top:-14px;
             padding-top:20px;
             overflow:hidden;
             }
@@ -893,7 +893,7 @@ z-index:100;
         float:left;
         width:49%;
         margin-right:2%;
-        margin-bottom:50px;
+        margin-bottom:0.5%;
     }
         #about ul li:nth-child(3n) {
             margin-right:2%;
@@ -905,10 +905,30 @@ z-index:100;
 
         #about ul li img{margin-bottom:2px;}
 
-    }
+
             #about ul li.aboutwrapA {height:auto;}
-
             #about ul li.aboutwrapB {height:auto;}
+            #about ul li.aboutwrapC {width:100%;}
+                #about ul li div.iworked{width:49%;margin-right:2%;float:left;height:260px}
+                #about ul li div.ilearned{width:49%;float:left;height:260px}
 
-            #about ul li.aboutwrapC {height:auto;}
+            .work ul li .worktitle{
+            font-size:1.5em;
+            letter-spacing: 1pt;}
 
+            .work ul li .worktitle-white{
+            font-size:1.5em;
+            letter-spacing: 1pt;}
+
+            .work ul li .subtitle{
+            font-size:1.0em;
+            letter-spacing:1px;
+            line-height:1.2em;
+            }
+
+            .work ul li .subtitle-white{
+            font-size:1.0em;
+            letter-spacing:1px;
+            line-height:1.2em;
+            }
+    }

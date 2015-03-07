@@ -38,13 +38,31 @@ $('ul.menu .workmenu ul li.all').click(function(){
 	$('.work ul li').fadeIn();
 });
 
+
 $('ul.menu .workmenu ul li.graphicdesign').click(function(){
 	$('.work ul li:not(.graphic)').fadeOut();
+    $('.work ul li.graphic').fadeIn();
 });
 
+
 $('ul.menu .workmenu ul li.servicedesign').click(function(){
-	$('.work ul li:not(.servicedesign)').fadeOut();
+	$('.work ul li:not(.service)').fadeOut();
+    $('.work ul li.service').fadeIn();
 });
+
+
+$('ul.menu .workmenu ul li.branding').click(function(){
+	$('.work ul li:not(.brand)').fadeOut();
+    $('.work ul li.brand').fadeIn();
+});
+
+
+$('ul.menu .workmenu ul li.illustration').click(function(){
+	$('.work ul li:not(.illust)').fadeOut();
+    $('.work ul li.illust').fadeIn(500);
+});
+
+
 
 
 if(W < 959){
@@ -139,12 +157,12 @@ if(W > 959){
 });
 
 
-$('a[href^=#]').on("click",function(){
+$('a[href^=#about]').on("click",function(){
     var t= $(this.hash);
-    var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
+    var t=t.length&&t||$('[about='+this.hash.slice(1)+']');
     if(t.length){
         var tOffset=t.offset().top;
-        $('html,body').animate({scrollTop:tOffset-20},'slow');
+        $('html,body').animate({scrollTop:tOffset-0},'slow');
         return false;
     }
 });
