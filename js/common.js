@@ -166,3 +166,14 @@ $('a[href^=#about]').on("click",function(){
         return false;
     }
 });
+
+
+$('a[href^=#intro]').on("click",function(){
+    var t= $(this.hash);
+    var t=t.length&&t||$('[intro='+this.hash.slice(1)+']');
+    if(t.length){
+        var tOffset=t.offset().top;
+        $('html,body').animate({scrollTop:tOffset-0},'slow');
+        return false;
+    }
+});
