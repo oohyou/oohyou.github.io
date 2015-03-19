@@ -191,11 +191,11 @@ z-index:100;
         overflow: hidden;
         }
 
-    #about ul li.aboutwrapA {height:540px;}
+    #about ul li.aboutwrapA {height:520px;}
 
-    #about ul li.aboutwrapB {height:540px;}
+    #about ul li.aboutwrapB {height:520px;}
 
-    #about ul li.aboutwrapC {height:540px;}
+    #about ul li.aboutwrapC {height:520px;}
 
     #about ul li:nth-child(3n) {
         margin-right: 0;
@@ -211,13 +211,13 @@ z-index:100;
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
                         box-sizing:        border-box;   /* Everything else */}
 
-        #about ul li div.interests{width:100%;height:312px;padding:5% 5% 4% 5%;margin-bottom:3.6%;
+        #about ul li div.interests{width:100%;height:292px;padding:5% 5% 4% 5%;margin-bottom:3.6%;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
                         box-sizing:        border-box;   /* Everything else */}
 
-        #about ul li div.whatido{width:100%;height:540px;padding:5% 5% 4% 5%;margin-bottom:3.6%;
+        #about ul li div.whatido{width:100%;height:520px;padding:5% 5% 4% 5%;margin-bottom:3.6%;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
@@ -235,7 +235,7 @@ z-index:100;
                     flex:1;
                     margin-bottom:15px;}
 
-        #about ul li div.ilearned{width:100%;height:208px;padding:5% 5% 4% 5%;
+        #about ul li div.ilearned{width:100%;height:188px;padding:5% 5% 4% 5%;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
@@ -841,13 +841,13 @@ z-index:100;
 
         #about ul li img{height:40px; margin:0 0 12px 0;}
 
-                #about ul li div.whatido{border:6px solid #333;}
-                #about ul li div.iam{border:6px solid #333;margin:0;}
+                #about ul li div.whatido{border:6px solid #333;height:424px;}
+                #about ul li div.iam{border:6px solid #333;margin:0;height:170px;}
                 #about ul li div.touch{border:6px solid #333;}
 
-            #about ul li.aboutwrapA {height:auto;}
+            #about ul li.aboutwrapA {height:170px;}
 
-    #about ul li.aboutwrapB {height:auto;}
+    #about ul li.aboutwrapB {height:424px;}
 
     #about ul li.aboutwrapC {height:100px;}
 
@@ -1167,7 +1167,7 @@ z-index:100;
         float:left;
         width:49%;
         margin-right:2%;
-        margin-bottom:0.5%;
+        margin-bottom:2%;
     }
 
         #about ul li:nth-child(3n) {
@@ -1181,9 +1181,12 @@ z-index:100;
         #about ul li img{margin-bottom:2px;}
 
 
-            #about ul li.aboutwrapA {height:auto;}
-            #about ul li.aboutwrapB {height:auto;}
+            #about ul li.aboutwrapA {height:480px;}
+            #about ul li.aboutwrapB {height:480px;}
             #about ul li.aboutwrapC {width:100%;}
+                #about ul li div.iam{margin-bottom:15px;}
+                #about ul li div.interests{height:257px;}
+                #about ul li div.whatido {height:480px;}
                 #about ul li div.iworked{width:49%;margin-right:2%;float:left;height:260px}
                 #about ul li div.ilearned{width:49%;float:left;height:260px}
 
