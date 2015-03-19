@@ -1082,12 +1082,12 @@ z-index:100;
 
             #about ul li.aboutwrapA {height:480px;}
             #about ul li.aboutwrapB {height:480px;}
-            #about ul li.aboutwrapC {width:100%;}
+            #about ul li.aboutwrapC {width:100%;height:240px;}
                 #about ul li div.iam{margin-bottom:15px;}
                 #about ul li div.interests{height:257px;}
                 #about ul li div.whatido {height:480px;}
-                #about ul li div.iworked{width:49%;margin-right:2%;float:left;height:260px}
-                #about ul li div.ilearned{width:49%;float:left;height:260px}
+                #about ul li div.iworked{width:49%;margin-right:2%;float:left;height:210px}
+                #about ul li div.ilearned{width:49%;float:left;height:210px}
 
             .work ul li .worktitle{
             font-size:1.5em;
