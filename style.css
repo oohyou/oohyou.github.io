@@ -1046,11 +1046,11 @@ z-index:100;
             overflow:hidden;
             }
 
-            .category li{transform:translate(0, -400%);font-size:0.8em;margin-right:18px;margin-bottom:5px;letter-spacing:1.5px;}
+            .category li{transform:translate(0, -400%);font-size:0.8em;margin-right:18px;margin-bottom:5px;letter-spacing:1.2px;}
 
                 .category li.illustration{margin-right:0;}
 
-            nav ul.menu li.workmenu:hover .workbar{width:510px;}
+            nav ul.menu li.workmenu:hover .workbar{width:500px;}
 
     .work ul li{
         float:left;
