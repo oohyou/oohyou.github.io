@@ -1046,7 +1046,7 @@ z-index:100;
             overflow:hidden;
             }
 
-            .category li{transform:translate(0, -400%);font-size:0.8em;margin-right:18px;margin-bottom:5px;letter-spacing:1.2px;}
+            .category li{transform:translate(0, -300%);font-size:0.8em;margin-right:18px;margin-bottom:5px;letter-spacing:1.2px;}
 
                 .category li.illustration{margin-right:0;}
 
