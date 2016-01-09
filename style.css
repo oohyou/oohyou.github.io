@@ -467,9 +467,9 @@ z-index:100;
 
                 @keyframes cycle {
                     0%  {left:150%;}
-                    4%  {left:50%; margin-left:-484px;}
-                    16% {left:50%; margin-left:-484px;}
-                    20% {left:-100%;}
+                    3%  {left:50%; margin-left:-484px;}
+                    12% {left:50%; margin-left:-484px;}
+                    15% {left:-100%;}
                     100%{left:-100%;}
                 }
 
@@ -484,7 +484,7 @@ z-index:100;
 
                 @keyframes cycletwo {
                     0%  {left:150%;}
-                    12% {left:150%;}
+                    13% {left:150%;}
                     15% {left:50%; margin-left:-484px;}
                     24% {left:50%; margin-left:-484px;}
                     27% {left:-100%;}
@@ -1143,23 +1143,23 @@ z-index:100;
                 @keyframes cycle {
                     0%  {left:150%;}
                     4%  {left:50%; margin-left:-484px;}
-                    16% {left:50%; margin-left:-484px;}
-                    20% {left:-100%;}
+                    13% {left:50%; margin-left:-484px;}
+                    15% {left:-100%;}
                     100%{left:-100%;}
                 }
 
 
                 @-webkit-keyframes cycle {
                     0%  {left:150%;}
-                    3%  {left:50%; margin-left:-350px;}
-                    12% {left:50%; margin-left:-350px;}
+                    4%  {left:50%; margin-left:-350px;}
+                    13% {left:50%; margin-left:-350px;}
                     15% {left:-100%;}
                     100%{left:-100%;}
                 }
 
                 @keyframes cycletwo {
                     0%  {left:150%;}
-                    12% {left:150%;}
+                    13% {left:150%;}
                     15% {left:50%; margin-left:-350px;}
                     24% {left:50%; margin-left:-350px;}
                     27% {left:-100%;}
