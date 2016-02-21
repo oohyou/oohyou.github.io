@@ -167,3 +167,17 @@
         width: 80%;
         max-width: 978px;
     }
+
+
+
+
+
+/* 반응형-스마트폰 : 굵기 얇게 6px*/
+ @media (max-width:500px) {
+     #loader{top:8px;right:8px;bottom:8px;left:8px;}
+        #loader #loader-top{height:6px;}
+        #loader #loader-right{width:6px;}
+        #loader #loader-left{width:6px;}
+        #loader #loader-bottom{width:8px;}
+
+}
