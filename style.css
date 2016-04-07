@@ -313,13 +313,13 @@ section::after {
 
 
 
-        #about ul li div.iam{height:170px;padding:5% 5% 4% 5%;margin-bottom:20px;overflow:hidden;
+        #about ul li div.iam{height:270px;padding:5% 5% 4% 5%;margin-bottom:20px;overflow:hidden;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
                         box-sizing:        border-box;   /* Everything else */}
 
-        #about ul li div.interests{width:100%;height:270px;padding:5% 5% 4% 5%;margin-bottom:3.6%;
+        #about ul li div.interests{width:100%;height:270px;padding:5% 5% 4% 5%;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
@@ -343,7 +343,7 @@ section::after {
                     flex:1;
                     margin-bottom:15px;}
 
-        #about ul li div.ilearned{width:100%;height:170px;padding:5% 5% 4% 5%;
+        #about ul li div.ilearned{width:100%;height:170px;padding:5% 5% 4% 5%;margin-bottom:20px;
                         border:10px solid #333;
                         -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
@@ -355,7 +355,11 @@ section::after {
                         -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
                         box-sizing:        border-box;   /* Everything else */}
 
-
+        #about ul li div.contact{width:100%;height:170px;padding:5% 5% 4% 5%;
+                        border:10px solid #333;
+                        -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+                        -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+                        box-sizing:        border-box;   /* Everything else */}
 
 /* WORK */
 
@@ -1112,7 +1116,7 @@ section::after {
 /* 태블릿PC */
 @media (min-width: 501px) and (max-width: 959px) {
 
-            .tablethide {display:none;}
+            .tablehide {display:none;}
 
             .basiclogo {
             position:fixed;
@@ -1211,8 +1215,8 @@ section::after {
                 #about ul li div.iam{margin-bottom:15px;}
                 #about ul li div.interests{height:257px;}
                 #about ul li div.whatido {height:440px;}
-                #about ul li div.iworked{width:49%;margin-right:2%;float:left;height:270px}
-                #about ul li div.ilearned{width:49%;float:left;height:270px}
+                #about ul li div.contact{height:150px;}
+
 
             .work ul li .worktitle{
             font-size:1.5em;
