@@ -77,6 +77,21 @@ hr {border:0;height:5px;}
 
 
 
+/* 브라우저 */
+.notice {
+    position:absolute;
+    width:100%;
+    bottom:30px;
+    left:0;
+    color:#aaa;
+    font-size:0.7em;
+    font-family:"Open Sans", sans-serif;
+    z-index:1;
+    text-align:center;
+    box-sizing: border-box;
+    }
+
+
 
 /* LOGO */
 .toplogo {
@@ -234,6 +249,7 @@ section::after {
 	20% {transform: rotate(-45deg) translate(-10px, 10px);}
 	40% {transform: rotate(-45deg) translate(0, 0);}
 }
+
 
 
 
