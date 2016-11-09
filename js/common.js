@@ -31,7 +31,7 @@ $('.isotope').isotope({
 	});
 	*/
 $('ul.menu .workmenu ul li').click(function(){
-	 $("html, body").animate({scrollTop:H*2},600);
+	 $("html, body").animate({scrollTop:H*1},600);
     $('.basiclogo').animate({opacity:1},500);
 });
 
@@ -49,10 +49,10 @@ $('ul.menu .workmenu ul li.graphicdesign').click(function(){
 });
 
 
-$('ul.menu .workmenu ul li.servicedesign').click(function(){
+$('ul.menu .workmenu ul li.bookdesign').click(function(){
     $('body').addClass('.cate');
-	$('.work ul li:not(.service)').fadeOut(10);
-    $('.work ul li.service').fadeIn(600);
+	$('.work ul li:not(.book)').fadeOut(10);
+    $('.work ul li.book').fadeIn(600);
 });
 
 

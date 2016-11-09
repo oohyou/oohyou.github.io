@@ -105,8 +105,8 @@ hr {border:0;height:5px;}
 
 .basiclogo {
     position:fixed;
-    left:7%;;
-    top:42px;
+    left:3%;;
+    top:40px;
     z-index:9;
     width:40px;
 	opacity:0;
@@ -117,11 +117,11 @@ hr {border:0;height:5px;}
 
 /* NAVIGATION */
 nav {position:fixed;
-width:86%;
+width:100%;
 color:#333;
-font-size:1.2em;
+font-size:1.0em;
 letter-spacing:0.1em;
-top:50px;
+top:40px;
 left:0;
 right:0;
 z-index:100;
@@ -130,26 +130,13 @@ z-index:100;
 
         nav ul.menu{}
                 ul.menu > li {position:absolute;}
-                        .menu li.aboutmenu {left:15%;}
-                        .menu li.workmenu {left:22%;}
-
-                             li.aboutmenu .aboutbar{
-                                    position:absolute;
-                                    display:block;
-                                    top:1px;
-                                    left:0px;
-                                    width:0px;
-                                    height:10px;
-                                    background-color:#333;
-                                    z-index:101;
-                                    transition:all 0.3s ease;
-                                    -webkit-transition:all 0.3s ease;
-                                    -moz-transition:all 0.3s ease;}
+                        .menu li.email {right:-40px;top:76px;}
+                        .menu li.workmenu {left:7%;}
 
                             li.workmenu .workbar{
                                     position:absolute;
                                     display:block;
-                                    top:1px;
+                                    top:0px;
                                     left:0px;
                                     width:0px;
                                     height:10px;
@@ -180,17 +167,34 @@ z-index:100;
                         .category li.all {}
                         .category li.graphicdesign {-webkit-transition-delay: 0.1s;
                                                     transition-delay: 0.1s;}
-                        .category li.servicedesign {-webkit-transition-delay: 0.2s;
+                        .category li.bookdesign {-webkit-transition-delay: 0.2s;
                                                     transition-delay: 0.2s;}
                         .category li.branding {-webkit-transition-delay:0.3s;
                                                 transition-delay:0.3s;}
-                        .category li.illustration {-webkit-transition-delay: 0.4s;
-                                                    transition-delay: 0.4s;}
 
                         nav ul.menu li.workmenu:hover ul.category li{transform:translate(0,0);
                         -webkit-transform:translate(0,0);}
-                        nav ul.menu li.workmenu:hover .workbar{width:590px;}
-                        nav ul.menu li.aboutmenu:hover .aboutbar{width:52px;}
+                        nav ul.menu li.workmenu:hover .workbar{width:236px;}
+
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(90deg);
+
+/* Firefox */
+-moz-transform: rotate(90deg);
+
+/* IE */
+-ms-transform: rotate(90deg);
+
+/* Opera */
+-o-transform: rotate(90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+
+}
 
 
 /* section + arrow */
@@ -794,10 +798,10 @@ section::after {
 
     .basiclogo {
         position:fixed;
-        left:10%;
-        top:30px;
+        left:5%;
+        top:20px;
         z-index:9;
-        width:38px;
+        width:40px;
         }
         .basiclogo img{width:100%;}
 
@@ -1130,16 +1134,16 @@ section::after {
 
 
 /* 태블릿PC */
-@media (min-width: 501px) and (max-width: 959px) {
+@media (min-width: 501px) and (max-width: 1024px) {
 
             .tablehide {display:none;}
 
             .basiclogo {
             position:fixed;
-            left:7%;
-            top:42px;
+            left:40px;
+            top:40px;
             z-index:9;
-            width:38px;
+            width:40px;
             }
                 .basiclogo img{width:100%;}
 
@@ -1187,11 +1191,11 @@ section::after {
             overflow:hidden;
             }
 
-            .category li{transform:translate(0, -300%);font-size:0.8em;margin-right:18px;margin-bottom:5px;letter-spacing:1.2px;}
+            .category li{transform:translate(0, -300%);font-size:1.0em;margin-right:18px;margin-bottom:5px;letter-spacing:1.2px;}
 
                 .category li.illustration{margin-right:0;}
 
-            nav ul.menu li.workmenu:hover .workbar{width:500px;}
+            nav ul.menu li.workmenu:hover .workbar{width:209px;}
 
     .work ul li{
         float:left;
