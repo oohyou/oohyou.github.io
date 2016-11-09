@@ -737,6 +737,19 @@ section::after {
 
     .mobilehide {display:none;}
 
+.emailmobile {display:block;
+position:absolute;
+width:100%;
+color:#333;
+font-size:1.0em;
+letter-spacing:0.1em;
+top:30px;
+left:0;
+right:0;
+z-index:100;text-align:center;}
+
+
+
 
         nav {position:fixed;
             color:#333;
@@ -1132,11 +1145,15 @@ section::after {
 
 }
 
+@media (min-width:501px){
+.emailmobile {display:none;}}
+
 
 /* 태블릿PC */
 @media (min-width: 501px) and (max-width: 1024px) {
 
             .tablehide {display:none;}
+
 
             .basiclogo {
             position:fixed;
