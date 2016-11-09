@@ -9,7 +9,7 @@
 
     #loader{
             position:absolute;
-            top:12px;right:12px;bottom:12px;left:12px;
+            top:8px;right:8px;bottom:8px;left:8px;
             z-index:101;
             overflow: hidden;
             -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
@@ -20,7 +20,7 @@
         #loader #loader-top{
                 position:absolute;
                 top:0; left:0; right:0;
-                width:100%; height:10px;
+                width:100%; height:6px;
                 background-color:#333;z-index:101;
                 -webkit-animation:aniTopBar 1.6s ease; /* Chrome, Opera 15+, Safari 5+ */
                 animation:aniTopBar 1.6s ease; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -39,7 +39,7 @@
         #loader #loader-right{
                 position:absolute;
                 top:0;right:0;bottom:0;
-                width:10px;height:100%;
+                width:6px;height:100%;
                 background-color:#333;z-index:101;
                 -webkit-animation:aniRightBar 1.6s ease;
                 animation:aniRightBar 1.6s ease;
@@ -61,7 +61,7 @@
         #loader #loader-bottom{
                 position:absolute;
                 right:0;left:0;bottom:0;
-                width:100%;height:10px;
+                width:100%;height:6px;
                 background-color:#333;z-index:101;
                 -webkit-animation:aniBottomBar 1.6s ease;
                 animation:aniBottomBar 1.6s ease;
@@ -82,7 +82,7 @@
         #loader #loader-left{
                 position:absolute;
                 top:0;left:0;bottom:0;
-                width:10px;height:100%;
+                width:6px;height:100%;
                 background-color:#333;z-index:101;
                 -webkit-animation:aniLeftBar 1.6s ease;
                 animation:aniLeftBar 1.6s ease;
