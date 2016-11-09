@@ -72,7 +72,7 @@ $('ul.menu .workmenu ul li.illustration').click(function(){
 
 
 
-if(W < 959){
+if(W < 1024){
     var previousPositon = 0;
     var eventPhase = false;
     var speed = 600;
@@ -94,7 +94,7 @@ if(W < 959){
 
 
 
-if(W > 959){
+if(W > 1024){
     var previousPositon = 0;
     var eventPhase = false;
     var speed = 600;
