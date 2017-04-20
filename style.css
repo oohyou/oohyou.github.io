@@ -67,7 +67,7 @@ strong{font-weight:600;}
 
 hr {border:0;height:5px;}
 
-
+.none{display:none;}
 
 
         #frameborder-top {position:fixed;top:4px;left:4px;right:4px;height:6px;background-color:#333;z-index:99;}
@@ -96,8 +96,8 @@ hr {border:0;height:5px;}
     position:absolute;
     left:50%;
     top:50%;
-    width:272px;
-    margin:-186px 0 0 -136px;
+    width:422px;
+    margin:-120px 0 0 -211px;
     z-index:2;
     }
 
@@ -1132,7 +1132,7 @@ z-index:100;text-align:center;}
             left:50%;
             top:50%;
             width:50%;
-            margin:-123px 0 0 -90px;
+            margin:-50px 0 0 -90px;
             z-index:0;
             }
 
