@@ -586,6 +586,11 @@ section::after {
                     -webkit-animation:cycleseven 30s ease infinite;
                     animation:cycleseven 30s ease infinite;
                 }
+                 #slider li.slideeight {
+                    -moz-animation:cycleeight 30s ease infinite;
+                    -webkit-animation:cycleeight 30s ease infinite;
+                    animation:cycleeight 30s ease infinite;
+                }
 
 
                 @keyframes cycle {
@@ -713,6 +718,22 @@ section::after {
                     84% {left:50%; margin-left:-484px;}
                     87% {left:-100%;}
                     100%{left:-100%;}
+                }
+
+                @keyframes cycleeight {
+                    0%  {left:150%;}
+                    84% {left:150%;}
+                    87% {left:50%; margin-left:-484px;}
+                    96% {left:50%; margin-left:-484px;}
+                    100% {left:-100%;}
+                }
+
+                @-webkit-keyframes cycleeight {
+                    0%  {left:150%;}
+                    84% {left:150%;}
+                    87% {left:50%; margin-left:-484px;}
+                    96% {left:50%; margin-left:-484px;}
+                    100% {left:-100%;}
                 }
 
 
